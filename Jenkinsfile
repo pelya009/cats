@@ -4,6 +4,8 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
+                sh 'ls -la'
+                sh 'python -m flask-app/app.py'
             }
         }
     }
