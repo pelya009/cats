@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'python --version'
                 sh 'ls -la'
-                sh 'python -m flask-app/app.py'
+                sh 'python -m ./flask-app/app.py'
             }
         }
     }
