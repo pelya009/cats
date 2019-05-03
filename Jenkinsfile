@@ -5,7 +5,9 @@ pipeline {
             steps {
                 sh 'python --version'
                 sh 'ls -la'
-                sh 'python -m ./flask-app/app.py'
+                sh 'python -m ensurepip'
+                sh 'pip install -r flask-app/requirements.txt'
+                sh 'python flask-app/app.py'
             }
         }
     }
